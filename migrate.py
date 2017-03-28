@@ -4,7 +4,7 @@ import json
 from common import confluence, zendesk, CREATE_AS_DRAFT
 
 
-def move(target_section_id, article_id):
+def migrate(target_section_id, article_id):
     mode = "view"
     try:
         confl_article = confluence().get_page_by_id(
@@ -35,4 +35,4 @@ if __name__ == "__main__":
               "<confluence_article_id>")
         exit(1)
 
-        move(zendesk_sec_id, art_id)
+        migrate(zendesk_sec_id, art_id)

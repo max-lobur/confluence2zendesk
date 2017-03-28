@@ -1,0 +1,9 @@
+export CONFLUENCE_URL="https://company.atlassian.net/wiki"
+export CONFLUENCE_USER="user1"
+export CONFLUENCE_PASSWORD="secret1"
+
+#export CREATE_AS_DRAFT=1
+
+export ZENDESK_URL="https://company.zendesk.com/"
+export ZENDESK_EMAIL="user2@mail.com"
+export ZENDESK_PASSWORD="secret2"

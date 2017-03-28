@@ -1,0 +1,6 @@
+# macOS
+*.DS_*
+
+# python
+*.pyc
+*.pyo

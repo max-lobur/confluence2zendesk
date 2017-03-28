@@ -29,9 +29,13 @@ password to your account through "I forgot password" form.
 * To get Zendesk section id open the section you need and copy id from the 
 url (it will look like ```115000735929-FAQ```)
 * To get Confluence article id click `````"..." -> "Page Information"````` and 
-get the id from the url (it will look like ```27399847```). Or use ```search.py```
+get the id from the url (it will look like ```27399847```). Or use ```c_search.py```
 
-##### Find confluence article by title/content
+##### Find Confluence article by title/content
 ```
-./search.py "<search text>"
+./c_search.py "<search text>"
+```
+##### Find Zendesk article by title/content
+```
+./z_search.py "<search text>"
 ```

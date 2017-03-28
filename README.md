@@ -24,12 +24,13 @@ password to your account through "I forgot password" form.
 ## Usage
 ##### Migrate article
 ```
-./migrate.py <confluence_article_id> <target_zendesk_section_id>
+./migrate.py <target_zendesk_section_id> <confluence_article_id> 
 ```
-* To get Confluence article id click `````"..." -> "Page Information"````` and 
-get the id from the url. Or use ```search.py```
 * To get Zendesk section id open the section you need and copy id from the 
-url (it will look like 115000735929-FAQ)
+url (it will look like ```115000735929-FAQ```)
+* To get Confluence article id click `````"..." -> "Page Information"````` and 
+get the id from the url (it will look like ```27399847```). Or use ```search.py```
+
 ##### Find confluence article by title/content
 ```
 ./search.py "<search text>"

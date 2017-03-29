@@ -14,11 +14,7 @@ def search(text):
 
 
 if __name__ == "__main__":
-    try:
-        assert len(sys.argv) == 2
-        text = sys.argv[1]
-    except AssertionError:
-        print("Usage: ./search.py 'text to search'")
-        exit(1)
-
+    if len(sys.argv) != 2:
+        exit("Usage: ./search.py 'text to search'")
+    text = sys.argv[1]
     search(text)

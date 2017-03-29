@@ -26,13 +26,9 @@ def migrate(target_section_id, article_id):
 
 
 if __name__ == "__main__":
-    try:
-        assert len(sys.argv) == 3
-        zendesk_sec_id = sys.argv[1]
-        art_id = sys.argv[2]
-    except AssertionError:
-        print("Usage: ./migrate.py <target_zendesk_section_id> "
-              "<confluence_article_id>")
-        exit(1)
-
-        migrate(zendesk_sec_id, art_id)
+    if len(sys.argv) != 3:
+        exit("Usage: ./migrate.py <target_zendesk_section_id> "
+             "<confluence_article_id>")
+    zendesk_sec_id = sys.argv[1]
+    art_id = sys.argv[2]
+    migrate(zendesk_sec_id, art_id)

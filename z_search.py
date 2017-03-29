@@ -15,6 +15,6 @@ def search(text):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        exit("Usage: ./search.py 'text to search'")
+        exit("Usage: ./z_search.py 'text to search'")
     text = sys.argv[1]
     search(text)
